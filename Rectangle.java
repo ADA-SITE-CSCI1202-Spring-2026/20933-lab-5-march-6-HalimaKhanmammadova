@@ -11,4 +11,9 @@ class Rectangle {
         Rectangle rect = (Rectangle) obj;
         return this.width == rect.width && this.height == rect.height;
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle(" + width + ", " + height + ")";
+    }
 }
