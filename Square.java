@@ -1,25 +1,4 @@
-class Rectangle {
-    int width, height;
-
-    public Rectangle(int w, int h) {
-        width = w;
-        height = h;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        Rectangle rect = (Rectangle) obj;
-        return this.width == rect.width && this.height == rect.height;
-    }
-}
-
-class Square extends Rectangle {
-    public Square(int side) {
-        super(side, side);
-    }
-}
-
-class Main {
+class SquareMain {
     public static void main(String[] args) {
         Object o1 = new Rectangle(5, 10);
         Object o2 = new Rectangle(15, 15);
